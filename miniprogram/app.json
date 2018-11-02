@@ -1,0 +1,21 @@
+{
+  "cloud": true,
+  "pages": [
+    "pages/home/home",
+    "pages/index/index",
+    "pages/add/add",
+    "pages/complex/complex",
+    "pages/info/info",
+    "pages/map/map"
+  ],
+  "window": {
+    "navigationStyle": "default",
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "云开发-数据库",
+    "navigationBarTextStyle": "black",
+    "onReachBottom":500,
+    "enablePullDownRefresh":true
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "van-card": "../vant/card/index",
+    "van-tag": "../vant/tag/index",
+    "van-notify":"../vant/notify/index",
+    "van-nav-bar":"../vant/nav-bar/index",
+     "van-search": "../vant/search/index",
+     "component-tabbar": "../components/tabbar/tabbar"
+  }
+}

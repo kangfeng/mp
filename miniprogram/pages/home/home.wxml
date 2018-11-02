@@ -1,0 +1,55 @@
+<van-transition name="fade">
+  <van-row>
+    <van-col span="24">
+      <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+        <block wx:key="id" wx:for="{{imgUrls}}">
+          <swiper-item>
+            <image src="{{item}}" class="slide-image" width="450" height="150" />
+          </swiper-item>
+        </block>
+      </swiper>
+    </van-col>
+  </van-row>
+
+  <van-row>
+    <van-col span="24">
+      <van-notice-bar left-icon="" text="这个项目是小程序-云开发数据库的演示项目，目前功能还非常的简单，仅仅作为演示用！" />
+    </van-col>
+  </van-row>
+
+<!--
+  <van-row custom-class="top_10">
+    <van-col span="24">
+      <van-button round type="primary" block bind:click="navigateToAdd">
+        <van-icon size="20px" name="add-o" /> 新增数据
+      </van-button>
+    </van-col>
+  </van-row>
+
+  <van-row custom-class="top_10">
+    <van-col span="24">
+      <van-button round type="warning" block plain bind:click="navigateToIndex">
+        <van-icon size="20px" name="more-o" /> 数据列表
+      </van-button>
+    </van-col>
+  </van-row>
+
+  <van-row custom-class="top_10">
+    <van-col span="24">
+      <van-button round type="danger" block bind:click="navigateToComplex">
+        <van-icon size="20px" name="info-o" /> 复杂查询
+      </van-button>
+    </van-col>
+  </van-row>
+
+<van-row custom-class="top_10">
+    <van-col span="24">
+      <van-button round type="default" block bind:click="navigateToMap">
+        <van-icon size="20px" name="info-o" /> 地图
+      </van-button>
+    </van-col>
+  </van-row>
+  -->
+
+</van-transition>
+<component-tabbar currentTab="{{active}}"></component-tabbar>

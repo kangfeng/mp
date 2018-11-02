@@ -1,0 +1,47 @@
+<!--标题栏-->
+<van-nav-bar
+  title="数据列表"
+  left-text="返回"
+  left-arrow
+  bind:click-left="onClickLeft"
+/>
+<!--标题栏-->
+
+<!--搜索框-->
+<van-search
+  value="{{ value }}"
+  placeholder="请输入搜索关键词"
+  show-action
+  bind:search="onSearch"
+  bind:cancel="onCancel"
+>
+</van-search>
+<!--搜索框-->
+
+<!--数据列表-->
+<block wx:for="{{products}}">
+<navigator url="../info/info?id={{item._id}}" hover-class="navigator-hover">
+<van-card
+  price="{{item.price}}"
+  desc="{{item.color}}"
+  title="{{item.title}}"
+  thumb="{{item.image}}"
+  data-id="{{item._id}}"
+  data-price="{{item.price}}"
+  bindtap="click"
+>
+  <view slot="footer">
+    <block wx:key="{{item._id}}" wx:for="{{item.tags}}" wx:for-item="items">
+      <van-tag mark type="default">
+        {{items}}
+      </van-tag>
+    </block>
+  </view>
+</van-card>
+</navigator>
+</block>
+<!--数据列表-->
+
+<!--Notify组件选择器-->
+<van-notify id="custom-selector" />
+<component-tabbar currentTab="{{active}}"></component-tabbar>

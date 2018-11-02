@@ -1,0 +1,13 @@
+{
+  "usingComponents": {
+    "van-button": "../vant/button/index",
+    "van-row": "../vant/row/index",
+    "van-col": "../vant/col/index",
+    "van-transition": "../vant/transition/index",
+    "van-notice-bar": "../vant/notice-bar/index",
+    "van-icon": "../vant/icon/index",
+    "van-tabbar": "../vant/tabbar/index",
+    "van-tabbar-item": "../vant/tabbar-item/index",
+    "component-tabbar": "../components/tabbar/tabbar"
+  }
+}

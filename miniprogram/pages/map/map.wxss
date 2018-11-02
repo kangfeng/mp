@@ -1,0 +1,14 @@
+/* pages/map/map.wxss */
+.split_line {
+  margin-top:30px;
+  border:2px solid #eee;
+}
+
+.title {
+  font-weight: bold;
+  margin-bottom:5px;
+}
+
+.tag {
+  margin-top:2px;
+}

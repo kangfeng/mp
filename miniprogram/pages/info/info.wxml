@@ -1,0 +1,8 @@
+<van-cell-group>
+  <image src="{{product.image}}"></image>
+  <van-cell title="标题" value="{{product.title}}" />
+  <van-cell title="价格" value="{{product.price}}" />
+  <van-cell title="详细信息" value="{{product.color}}" label="描述信息" border="{{ false }}" />
+  <van-cell title="浏览" value="{{product.view}}" />
+</van-cell-group>
+<component-tabbar></component-tabbar>

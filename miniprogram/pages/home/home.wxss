@@ -1,0 +1,4 @@
+/* pages/home/home.wxss */
+.top_10 {
+  margin-top: 10px;
+}
