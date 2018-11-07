@@ -5,7 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    active:1
+    active: 1
   },
 
   addData: function (event) {

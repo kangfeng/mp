@@ -1,0 +1,6 @@
+<!--pages/components/BottomNav.wxml-->
+<van-button plain type="primary" bind:click="navigateToHome"><van-icon name="home" />主页</van-button>
+<van-button plain type="primary" bind:click="navigateToAdd"><van-icon name="shop" />新增</van-button>
+<van-button plain type="primary" bind:click="navigateToIndex"><van-icon name="chat" />列表</van-button>
+<van-button plain type="primary" bind:click="navigateToComplex"><van-icon name="search" />查询</van-button>
+<van-button plain type="primary" bind:click="navigateToMap"><van-icon name="location" />地图</van-button>

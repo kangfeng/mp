@@ -5,4 +5,4 @@
   <van-cell title="详细信息" value="{{product.color}}" label="描述信息" border="{{ false }}" />
   <van-cell title="浏览" value="{{product.view}}" />
 </van-cell-group>
-<component-tabbar></component-tabbar>
+<!-- <component-tabbar></component-tabbar> -->

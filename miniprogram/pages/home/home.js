@@ -3,55 +3,26 @@ Page({
 
   data: {
     active: 0,
+    //图片地址
     imgUrls: [
-      'http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg',
-      'http://img06.tooopen.com/images/20160818/tooopen_sy_175866434296.jpg',
-      'http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg'
+      '/images/img_01.jpg',
+      '/images/img_01.jpg',
+      '/images/img_01.jpg'
     ],
+    //是否采用衔接滑动  
+    circular: true,
+    //是否显示画板指示点  
     indicatorDots: true,
+    //选中点的颜色  
+    indicatorcolor: "#ffffff",
+    //是否竖直  
+    vertical: false,
+    //是否自动切换  
     autoplay: true,
-    interval: 5000,
-    duration: 1000
-  },
-
-  navigateToHome: function(event) {
-    wx.navigateTo({
-      url: '../home/home',
-    })
-  },
-
-  navigateToAdd: function(event) {
-    wx.navigateTo({
-      url: '../add/add',
-    })
-  },
-
-  navigateToIndex: function(event) {
-    wx.navigateTo({
-      url: '../index/index',
-    })
-  },
-
-  navigateToComplex: function(event) {
-    wx.navigateTo({
-      url: '../complex/complex',
-    })
-  },
-
-  navigateToMap: function (event) {
-    wx.navigateTo({
-      url: '../map/map',
-    })
-  },
-
-  switchTab:function (event) {
-    var idx = event.detail
-    console.log(idx)
-    if (idx == 0) this.navigateToHome()
-    if (idx == 1) this.navigateToAdd()
-    if (idx == 2) this.navigateToIndex()
-    if (idx == 3) this.navigateToComplex()
-    if (idx == 4) this.navigateToMap()
+    //自动切换的间隔
+    interval: 2500,
+    //滑动动画时长毫秒  
+    duration: 100,
   }
 
 })

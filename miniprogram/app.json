@@ -17,5 +17,34 @@
     "navigationBarTextStyle": "black",
     "onReachBottom":500,
     "enablePullDownRefresh":true
+  },
+  "tabBar": {
+    "color": "#777",
+    "selectedColor": "#f00",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "images/nav/home-off.png",
+        "selectedIconPath": "images/nav/home-on.png"
+      }, {
+        "pagePath": "pages/index/index",
+        "text": "列表",
+        "iconPath": "images/nav/my-off.png",
+        "selectedIconPath": "images/nav/my-on.png"
+      }, {
+        "pagePath": "pages/complex/complex",
+        "text": "查询",
+        "iconPath": "images/nav/cart-off.png",
+        "selectedIconPath": "images/nav/cart-on.png"
+      }, {
+        "pagePath": "pages/map/map",
+        "text": "地图",
+        "iconPath": "images/nav/order-off.png",
+        "selectedIconPath": "images/nav/order-on.png"
+      }
+    ]
   }
+
 }

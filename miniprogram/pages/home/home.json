@@ -8,6 +8,8 @@
     "van-icon": "../vant/icon/index",
     "van-tabbar": "../vant/tabbar/index",
     "van-tabbar-item": "../vant/tabbar-item/index",
-    "component-tabbar": "../components/tabbar/tabbar"
-  }
+    "component-tabbar": "../components/tabbar/tabbar",
+    "component-bottomnav": "../components/BottomNav/BottomNav"
+  },
+  "enablePullDownRefresh":false
 }

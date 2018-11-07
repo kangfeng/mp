@@ -1,6 +1,6 @@
-<van-transition name="fade">
-  <van-row>
-    <van-col span="24">
+<van-row>
+  <van-col span="24">
+    <view class="swiper">
       <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
         <block wx:key="id" wx:for="{{imgUrls}}">
           <swiper-item>
@@ -8,14 +8,15 @@
           </swiper-item>
         </block>
       </swiper>
-    </van-col>
-  </van-row>
+    </view>
+  </van-col>
+</van-row>
 
-  <van-row>
-    <van-col span="24">
-      <van-notice-bar left-icon="" text="这个项目是小程序-云开发数据库的演示项目，目前功能还非常的简单，仅仅作为演示用！" />
-    </van-col>
-  </van-row>
+<van-row>
+  <van-col span="24">
+    <van-notice-bar left-icon="" text="这个项目是小程序-云开发数据库的演示项目，目前功能还非常的简单，仅仅作为演示用！" />
+  </van-col>
+</van-row>
 
 <!--
   <van-row custom-class="top_10">
@@ -50,6 +51,4 @@
     </van-col>
   </van-row>
   -->
-
-</van-transition>
-<component-tabbar currentTab="{{active}}"></component-tabbar>
+<!-- <component-tabbar active="{{ active }}"></component-tabbar> -->

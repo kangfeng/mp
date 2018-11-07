@@ -1,8 +1,8 @@
 <!--pages/components/tabbar.wxml-->
-<van-tabbar active="{{ currentTab }}" bind:change="switchTab">
+<van-tabbar active="{{ active }}" data-id="{{ active }}" bind:change="switchTab">
   <van-tabbar-item icon="home">主页</van-tabbar-item>
   <van-tabbar-item icon="shop">新增</van-tabbar-item>
   <van-tabbar-item icon="chat">列表</van-tabbar-item>
   <van-tabbar-item icon="search">查询</van-tabbar-item>
-  <van-tabbar-item icon="location">地图</van-tabbar-item>
+  <!-- <van-tabbar-item icon="location">地图</van-tabbar-item> -->
 </van-tabbar>

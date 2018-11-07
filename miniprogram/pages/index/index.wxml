@@ -19,7 +19,7 @@
 <!--搜索框-->
 
 <!--数据列表-->
-<block wx:for="{{products}}">
+<block wx:key="id" wx:for="{{products}}">
 <navigator url="../info/info?id={{item._id}}" hover-class="navigator-hover">
 <van-card
   price="{{item.price}}"
@@ -44,4 +44,4 @@
 
 <!--Notify组件选择器-->
 <van-notify id="custom-selector" />
-<component-tabbar currentTab="{{active}}"></component-tabbar>
+<!-- <component-tabbar active="{{active}}"></component-tabbar> -->

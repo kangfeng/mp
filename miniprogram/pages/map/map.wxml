@@ -50,4 +50,4 @@
   </block>
 </view>
 
-<component-tabbar currentTab="{{active}}"></component-tabbar>
+<!-- <component-tabbar currentTab="{{active}}"></component-tabbar> -->

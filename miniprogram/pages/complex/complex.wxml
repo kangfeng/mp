@@ -6,7 +6,7 @@
 <van-button square type="warning"  bind:click="orderBy">orderBy</van-button>
 <van-button square type="warning"  bind:click="count">{{count}}</van-button>
 
-<block wx:for="{{products}}">
+<block wx:key="id" wx:for="{{products}}">
 <van-card
   price="{{item.price}}"
   desc="{{item.color}}"
@@ -14,4 +14,4 @@
   thumb="{{item.image}}"
 />
 </block>
-<component-tabbar currentTab="{{active}}"></component-tabbar>
+<!-- <component-tabbar active="{{active}}"></component-tabbar> -->
